@@ -13,12 +13,9 @@ can be found in the LICENSE file at https://angular.io/license
     </a>
   </h3>
   <p *ngIf="product.description">Description: {{ product.description }}</p>
-  <p>wdfsdg</p>
 
-  <p>price : product.price</p>
   <button type="button" (click)="share()">Share</button>
 
-  <p *ngIf="product && product.price > 700">
-    <button type="button">Notify Me</button>
-  </p>
+  <app-product-alerts [product]="product" (notify)="onNotify()">
+  </app-product-alerts>
 </div>
