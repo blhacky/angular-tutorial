@@ -1,4 +1,5 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed; Input } from '@angular/core/testing';
+import { Product } from '../products';
 
 import { ProductAlertsComponent } from './product-alerts.component';
 
